@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 import dotenv from "dotenv";
 import notesRoutes from "./routes/notesRoutes.js";
 import { connectDB } from "./config/db.js";
@@ -9,7 +10,14 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5001;
 
-// Middleware:Lets Express read JSON data from requests
+// Middleware: Allows our React frontend to send requests to this backend
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+  }),
+);
+
+// Middleware: Lets Express read JSON data from requests
 app.use(express.json());
 
 // Example middleware:
