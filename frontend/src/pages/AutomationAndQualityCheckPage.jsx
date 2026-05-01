@@ -60,7 +60,7 @@ const AutomationAndQualityCheckPage = () => {
 
             <p className="mt-6 text-lg leading-8 text-base-content/70">
               Nachdem juristische Regeln in klare Prüfschritte übersetzt wurden,
-              folgt der nächste Schritt: Die Prüflogik wird so formuliert, dass
+              folgt der nächste Schritt: Die Entscheidungslogik wird so formuliert, dass
               ein System oder eine KI sie auf konkrete Fälle anwenden kann.
             </p>
 
@@ -111,7 +111,7 @@ const AutomationAndQualityCheckPage = () => {
               </p>
 
               <h2 className="mt-3 text-2xl font-bold">
-                Elterngeld-Prüflogik als automatisierte Prüfung
+                Elterngeld-Entscheidungslogik als automatisierte Prüfung
               </h2>
 
               <p className="mt-4 leading-7 text-base-content/70">
@@ -256,12 +256,12 @@ const AutomationAndQualityCheckPage = () => {
               </p>
 
               <h2 className="mt-3 text-2xl font-bold">
-                Eine geprüfte und nachgeschärfte Prüflogik
+                Eine geprüfte und nachgeschärfte Entscheidungslogik
               </h2>
 
               <p className="mt-4 max-w-3xl leading-7 text-base-content/70">
                 Am Ende steht nicht nur eine automatisierte Prüfung, sondern
-                eine verbesserte Prüflogik. Die Testfälle zeigen, ob das System
+                eine verbesserte Entscheidungslogik. Die Testfälle zeigen, ob das System
                 einfache Fälle, Ausschlussgründe, Grenzwerte und fehlende
                 Angaben richtig behandelt.
               </p>

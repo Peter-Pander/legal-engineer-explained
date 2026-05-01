@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 const LegalRuleDesignPage = () => {
   const focusAreas = [
     {
-      title: "Recht in Prüflogik übersetzen",
+      title: "Recht in Entscheidungslogik übersetzen",
       description:
         "Gesetze, Vorschriften und interne Regeln werden in klare Prüfungsschritte zerlegt. Dabei wird sichtbar, welche Voraussetzungen erfüllt sein müssen, welche Ausnahmen greifen können und welche Ergebnisse daraus folgen.",
       icon: GitFork,
@@ -15,7 +15,7 @@ const LegalRuleDesignPage = () => {
     {
       title: "Automatisieren und Qualität prüfen",
       description:
-        "Eine juristische Prüflogik wird so vorbereitet, dass ein System oder eine KI sie auf konkrete Fälle anwenden kann. Danach wird geprüft, ob die Ergebnisse rechtlich korrekt sind und ob Grenzfälle, Ausnahmen oder unklare Begriffe sauber berücksichtigt wurden.",
+        "Eine juristische Entscheidungslogik wird so vorbereitet, dass ein System oder eine KI sie auf konkrete Fälle anwenden kann. Danach wird geprüft, ob die Ergebnisse rechtlich korrekt sind und ob Grenzfälle, Ausnahmen oder unklare Begriffe sauber berücksichtigt wurden.",
       icon: Bot,
       path: "/legal-rule-design/automation-and-quality-check",
     },

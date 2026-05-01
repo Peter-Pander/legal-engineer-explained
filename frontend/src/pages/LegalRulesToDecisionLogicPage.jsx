@@ -59,7 +59,7 @@ const LegalRulesToDecisionLogicPage = () => {
             </p>
 
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-              Recht in Prüflogik übersetzen
+              Recht in Entscheidungslogik übersetzen
             </h1>
 
             <p className="mt-6 text-lg leading-8 text-base-content/70">
@@ -83,7 +83,7 @@ const LegalRulesToDecisionLogicPage = () => {
               <GitFork size={30} />
             </div>
 
-            <h2 className="text-2xl font-bold">Von der Norm zur Prüflogik</h2>
+            <h2 className="text-2xl font-bold">Von der Norm zur Entscheidungslogik</h2>
 
             <p className="mt-4 leading-7 text-base-content/70">
               Eine juristische Regel wird nicht nur zusammengefasst, sondern in
