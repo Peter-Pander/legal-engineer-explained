@@ -22,7 +22,7 @@ const AutomationAndQualityCheckPage = () => {
     {
       name: "Fall C",
       input: "20 Wochenstunden, 190.000 Euro zu versteuerndes Einkommen",
-      result: "Unklar.",
+      result: "Unklar: Missverständliche Formulierung.",
       reason:
         "Das System könnte die Frage so verstehen, dass das Einkommen über 175.000 Euro liegen muss, damit Elterngeld zusteht. Gemeint ist allerdings das Gegenteil: Wenn das zu versteuernde Einkommen mehr als 175.000 Euro beträgt, greift der Einkommensausschluss. Dann besteht kein Anspruch dem Grunde nach.",
     },
