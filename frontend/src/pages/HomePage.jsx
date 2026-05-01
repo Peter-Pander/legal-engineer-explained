@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { FileCog, GitFork, ShieldCheck } from "lucide-react";
 
 import Navbar from "../components/Navbar";
@@ -21,6 +22,7 @@ const HomePage = () => {
       description:
         "Juristische Regeln werden in einfache Wenn-dann-Logik übersetzt: Wann gilt eine Regel, welche Ausnahmen gibt es und was folgt daraus?",
       icon: GitFork,
+      path: "/legal-rule-design",
     },
   ];
 
@@ -54,7 +56,27 @@ const HomePage = () => {
             {legalEngineerAreas.map((area) => {
               const Icon = area.icon;
 
-              return (
+              return area.path ? (
+                <Link
+                  key={area.title}
+                  to={area.path}
+                  className="rounded-3xl border border-base-300 bg-base-100 p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                >
+                  <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+                    <Icon size={26} />
+                  </div>
+
+                  <h3 className="text-xl font-semibold">{area.title}</h3>
+
+                  <p className="mt-4 leading-7 text-base-content/70">
+                    {area.description}
+                  </p>
+
+                  <p className="mt-6 text-sm font-semibold text-primary">
+                    Mehr erfahren →
+                  </p>
+                </Link>
+              ) : (
                 <article
                   key={area.title}
                   className="rounded-3xl border border-base-300 bg-base-100 p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md"

@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router";
 import HomePage from "./pages/HomePage";
 import CreatePage from "./pages/CreatePage";
 import NoteDetailPage from "./pages/NoteDetailPage";
+import LegalRuleDesignPage from "./pages/LegalRuleDesignPage";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/legal-rule-design" element={<LegalRuleDesignPage />} />
         <Route path="/create" element={<CreatePage />} />
         <Route path="/note/:id" element={<NoteDetailPage />} />
       </Routes>
