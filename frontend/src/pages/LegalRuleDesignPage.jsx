@@ -15,8 +15,9 @@ const LegalRuleDesignPage = () => {
     {
       title: "Automatisieren und Qualität prüfen",
       description:
-        "Die Prüfungsschritte werden in eine Form gebracht, mit der ein digitales System arbeiten kann. Danach wird geprüft, ob die Ergebnisse juristisch korrekt sind und ob Sonderfälle, Ausnahmen oder unklare Begriffe sauber erfasst wurden.",
+        "Eine juristische Prüflogik wird so vorbereitet, dass ein System oder eine KI sie auf konkrete Fälle anwenden kann. Danach wird geprüft, ob die Ergebnisse rechtlich korrekt sind und ob Grenzfälle, Ausnahmen oder unklare Begriffe sauber berücksichtigt wurden.",
       icon: Bot,
+      path: "/legal-rule-design/automation-and-quality-check",
     },
     {
       title: "In Workflows einbauen",

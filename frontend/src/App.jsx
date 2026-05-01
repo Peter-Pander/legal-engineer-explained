@@ -5,6 +5,7 @@ import CreatePage from "./pages/CreatePage";
 import NoteDetailPage from "./pages/NoteDetailPage";
 import LegalRuleDesignPage from "./pages/LegalRuleDesignPage";
 import LegalRulesToDecisionLogicPage from "./pages/LegalRulesToDecisionLogicPage";
+import AutomationAndQualityCheckPage from "./pages/AutomationAndQualityCheckPage";
 
 const App = () => {
   return (
@@ -17,6 +18,10 @@ const App = () => {
         <Route
           path="/legal-rule-design/legal-rules-to-decision-logic"
           element={<LegalRulesToDecisionLogicPage />}
+        />
+        <Route
+          path="/legal-rule-design/automation-and-quality-check"
+          element={<AutomationAndQualityCheckPage />}
         />
         <Route path="/create" element={<CreatePage />} />
         <Route path="/note/:id" element={<NoteDetailPage />} />
