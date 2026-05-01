@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import CreatePage from "./pages/CreatePage";
 import NoteDetailPage from "./pages/NoteDetailPage";
 import LegalRuleDesignPage from "./pages/LegalRuleDesignPage";
+import LegalRulesToDecisionLogicPage from "./pages/LegalRulesToDecisionLogicPage";
 
 const App = () => {
   return (
@@ -13,6 +14,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/legal-rule-design" element={<LegalRuleDesignPage />} />
+        <Route
+          path="/legal-rule-design/legal-rules-to-decision-logic"
+          element={<LegalRulesToDecisionLogicPage />}
+        />
         <Route path="/create" element={<CreatePage />} />
         <Route path="/note/:id" element={<NoteDetailPage />} />
       </Routes>

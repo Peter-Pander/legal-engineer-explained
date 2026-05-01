@@ -10,6 +10,7 @@ const LegalRuleDesignPage = () => {
       description:
         "Gesetze, Vorschriften und interne Regeln werden in klare Prüfungsschritte zerlegt. Dabei wird sichtbar, welche Voraussetzungen erfüllt sein müssen, welche Ausnahmen greifen können und welche Ergebnisse daraus folgen.",
       icon: GitFork,
+      path: "/legal-rule-design/legal-rules-to-decision-logic",
     },
     {
       title: "Automatisieren und Qualität prüfen",
@@ -156,11 +157,8 @@ const LegalRuleDesignPage = () => {
             {focusAreas.map((area) => {
               const Icon = area.icon;
 
-              return (
-                <article
-                  key={area.title}
-                  className="rounded-3xl border border-base-300 bg-base-100 p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-                >
+              const cardContent = (
+                <>
                   <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
                     <Icon size={26} />
                   </div>
@@ -170,6 +168,33 @@ const LegalRuleDesignPage = () => {
                   <p className="mt-4 leading-7 text-base-content/70">
                     {area.description}
                   </p>
+
+                  {area.path && (
+                    <p className="mt-6 font-semibold text-primary">
+                      Mehr erfahren →
+                    </p>
+                  )}
+                </>
+              );
+
+              if (area.path) {
+                return (
+                  <Link
+                    key={area.title}
+                    to={area.path}
+                    className="rounded-3xl border border-base-300 bg-base-100 p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                  >
+                    {cardContent}
+                  </Link>
+                );
+              }
+
+              return (
+                <article
+                  key={area.title}
+                  className="rounded-3xl border border-base-300 bg-base-100 p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                >
+                  {cardContent}
                 </article>
               );
             })}
