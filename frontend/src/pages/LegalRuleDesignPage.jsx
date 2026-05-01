@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 const LegalRuleDesignPage = () => {
   const focusAreas = [
     {
-      title: "Recht in Systemlogik übersetzen",
+      title: "Recht in Prüflogik übersetzen",
       description:
         "Gesetze, Vorschriften und interne Regeln werden in klare Prüfungsschritte zerlegt. Dabei wird sichtbar, welche Voraussetzungen erfüllt sein müssen, welche Ausnahmen greifen können und welche Ergebnisse daraus folgen.",
       icon: GitFork,
