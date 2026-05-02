@@ -6,6 +6,7 @@ import NoteDetailPage from "./pages/NoteDetailPage";
 import LegalRuleDesignPage from "./pages/LegalRuleDesignPage";
 import LegalRulesToDecisionLogicPage from "./pages/LegalRulesToDecisionLogicPage";
 import AutomationAndQualityCheckPage from "./pages/AutomationAndQualityCheckPage";
+import WorkflowIntegrationPage from "./pages/WorkflowIntegrationPage";
 
 const App = () => {
   return (
@@ -22,6 +23,10 @@ const App = () => {
         <Route
           path="/legal-rule-design/automation-and-quality-check"
           element={<AutomationAndQualityCheckPage />}
+        />
+        <Route
+          path="/legal-rule-design/workflow-integration"
+          element={<WorkflowIntegrationPage />}
         />
         <Route path="/create" element={<CreatePage />} />
         <Route path="/note/:id" element={<NoteDetailPage />} />

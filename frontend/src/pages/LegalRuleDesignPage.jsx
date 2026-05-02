@@ -20,10 +20,11 @@ const LegalRuleDesignPage = () => {
       path: "/legal-rule-design/automation-and-quality-check",
     },
     {
-      title: "In Workflows einbauen",
+      title: "Entscheidungslogik in Workflows integrieren",
       description:
-        "Die Prüfung soll nicht nur für sich allein funktionieren, sondern Teil eines größeren Ablaufs werden. Zum Beispiel: Daten kommen aus einem Formular, die Voraussetzungen werden geprüft, und das Ergebnis wird an den nächsten Bearbeitungsschritt weitergegeben.",
+        "Eine juristische Entscheidungslogik soll nicht isoliert bleiben, sondern an der richtigen Stelle in einen größeren Arbeitsablauf eingebunden werden. Daten kommen zum Beispiel aus einem Formular oder einem bestehenden System, die Voraussetzungen werden geprüft, und das Ergebnis löst den nächsten Bearbeitungsschritt aus.",
       icon: Workflow,
+      path: "/legal-rule-design/workflow-integration",
     },
     {
       title: "Standards und Use Cases entwickeln",
